@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Додати електроприймач"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Назва (напр. Токарний верстат)"/>
+
+    <EditText
+        android:id="@+id/et_pn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Номінальна потужність Pn (кВт)"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/et_kv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Коефіцієнт використання Kv"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/et_cos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Коефіцієнт потужності (cos φ)"
+        android:inputType="numberDecimal"
+        android:text="0.9"/>
+        
+    <EditText
+        android:id="@+id/et_tg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="tg φ (необов'язково)"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/et_un"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Напруга Un (кВ)"
+        android:inputType="numberDecimal"
+        android:text="0.38"/>
+
+    <EditText
+        android:id="@+id/et_n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Кількість n (шт)"
+        android:inputType="number"
+        android:text="1"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Зберегти"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
